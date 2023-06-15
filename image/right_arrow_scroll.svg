@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="right_arrow_scroll" transform="translate(-1564 -298)">
+    <g id="그룹_232" data-name="그룹 232" transform="translate(584 -1713)">
+      <rect id="사각형_70" data-name="사각형 70" width="36" height="36" transform="translate(980 2011)" fill="#fff"/>
+    </g>
+    <g id="화살표용" transform="translate(1578.555 322) rotate(-90)">
+      <path id="Vector" d="M6.445,12.926,0,6.463,6.445,0" transform="translate(0 6.445) rotate(-90)" fill="none" stroke="#818181" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

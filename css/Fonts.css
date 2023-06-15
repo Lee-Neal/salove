@@ -1,0 +1,29 @@
+@charset "EUC-KR";
+/* 
+    Thin,   ExtraLight,     Light,
+    Regular,    Medium,     SemiBold,
+    Bold,   ExtraBold,  Black
+    font-family:"Pretendard Variable";
+    font-weight:400; 
+    */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable.css");
+/* font-family: 'NanumSquare'; */
+@import url('https://webfontworld.github.io/naver/NanumSquare.css');
+@font-face {
+    font-family: 'Poetsen One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poetsen One'), url('https://fonts.cdnfonts.com/s/31868/PoetsenOne-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2') format('woff2');
+  }

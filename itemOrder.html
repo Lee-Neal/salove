@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/itemOrder.css">
+    <link rel="stylesheet" href="css/top_menu.css">
+</head>
+<body>
+    <header>
+        <div id="main_warp">
+            <div class="nav">
+                <ul class="menu">
+                    <li>
+                        <a href="main.html"><img src="image/그룹 306.svg"></a>
+                    </li>
+                    <li>
+                        <a href="intro.html">샐러브소개</a>
+                    </li>
+                    <li>
+                        <a href="dietary.html">이달식단표</a>
+                    </li>
+                    <li>
+                        <a href="salad_info.html">샐러드정보</a>
+                    </li>
+                    <li>
+                        <a href="sotre_info.html">매장안내</a>
+                    </li>
+                    <li>
+                        <a href="franchise.html">프렌차이즈</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">주문하기</a>
+                    </li>
+                    <li><a href="###">회원가입</a></li>
+                    <li><a href="###">로그인</a></li>
+                    <li><a href="###">마이페이지</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="itemOrder__info block">
+        <div class="itemOrder__info__topText topText">
+            주문/결제
+        </div>
+        <div class="itemOrder__info__shipinfo subTitle">주문내역</div>
+        <div class="itemOrder__info__detailWrap detailWrap">
+            <div class="itemOrder__info__detailImage detailImage">
+            </div>
+            <div class="itemOrder__info__detailCenter detailCenter">
+                <div class="itemOrder__info__engName engName">Salad+Chicken breast+Juice [20 days]</div>
+                <div class="itemOrder__info__korName korName">베이직 샐러드+수비드 닭가슴살+음료 [20일]</div>
+                <div class="itemOrder__info__shipDurationWrap shipDurationWrap">
+                    <span class="itemOrder__info__shipDurationText shipDurationText">지금주문시 수령가능기간</span>
+                    <div class="itemOrder__info__shipMiddleBorder shipMiddleBorder"></div>
+                    <span class="itemOrder__info__shipDurationIndex shipDurationIndex">2023년 02월 05일 ~ 2023년 05월 05일 (3개월이내)</span>
+                </div>
+            </div>
+            <div class="itemOrder__info__detailCenter detailRight">
+                <div class="itemOrder__info__ownPrice ownPrice">75,000원</div>
+                <div class="itemOrder__info__priceTab priceTab">
+                    <div class="itemOrder__info__mount mount">2개</div>
+                    <div>
+                        <span class="itemOrder__info__payAmount payAmount">420,000</span><!-- 
+                     --><span class="itemOrder__info__payAmountWon payAmountWon">원</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="itemOrder__info__shipDay subTitle">배송요일 선택</div>
+        <div class="itemOrder__info__shipDayWrap shipDayWrap">
+            <div class="itemOrder__info__subText subText">* 배송을 받기 원하는 요일을 선택해주세요.</div>
+            <div class="itemOrder__info__daySelectBox daySelectBox">
+                <!-- 선택 시 class daySelectBox--selected 부여 -->
+                <div>월요일</div>
+                <div class="daySelectBox--selected">화요일</div>
+                <div>수요일</div>
+                <div class="daySelectBox--selected">목요일</div>
+                <div class="daySelectBox--selected">금요일</div>
+            </div>
+        </div>
+        <div class="itemOrder__info__subTitle subTitle">첫 배송일 선택</div>
+        <div class="itemOrder__info__startDayWrap startDayWrap">
+            <div class="itemOrder__info__subText subText">
+                * 특정날짜 제외 신청은 주문결제후 마이페이지에서 가능합니다.<br>
+                * 배송날짜지정은 주문결제날짜로부터 3달이내만 가능합니다.
+            </div>
+            <div class="itemOrder__info__startDayCaleander startDayCaleander">
+                <div class="itemOrder__info__startDayCaleander__YYMM startDayCaleander__YYMM">
+                    <div>
+                        <img src="./image/CalneanderLeftArr.png" alt="">
+                    </div>
+                    <div>2023년 9월</div>
+                    <div>
+                        <img src="./image/CalneanderRightArr.png" alt="">
+                    </div>
+                </div>
+                <div class="itemOrder__info__startDayCaleander__head startDayCaleander__head">
+                    <div class="itemOrder__info__startDayCaleander__SUN startDayCaleander__SUN">SUN</div>
+                    <div>MON</div>
+                    <div>TUE</div>
+                    <div>WED</div>
+                    <div>THU</div>
+                    <div>FRI</div>
+                    <div class="itemOrder__info__startDayCaleander__SAT startDayCaleander__SAT">SAT</div>
+                </div>
+                <!-- 반복 생성 
+                기본 값 : 빨간날 -> .startDayCaleander__SUN
+                토요일 -> .startDayCaleander__SAT
+                
+                배송일 지정안된 평일 -> .startDayCaleander--unselected
+                배송일 지정안된 빨간날 -> .startDayCaleander__SUN--unselected
+                배송일 지정안된 토요일 -> .startDayCaleander__SAT--unselected
+
+                배송일 지정된 날 -> .startDayCaleander--selected
+                -->
+                <div class="startDayCaleander__week">
+                    <div class="startDayCaleander__SUN--unselected">29</div>
+                    <div class="startDayCaleander--unselected">30</div>
+                    <div class="startDayCaleander--selected">31</div>
+                    <div class="startDayCaleander--unselected">1</div>
+                    <div class="startDayCaleander--selected">2</div>
+                    <div class="startDayCaleander--selected">3</div>
+                    <div class="startDayCaleander__SAT--unselected">4</div>
+                </div>
+                <div class="startDayCaleander__week">
+                    <div class="startDayCaleander__SUN--unselected">29</div>
+                    <div class="startDayCaleander--unselected">30</div>
+                    <div class="startDayCaleander--selected">31</div>
+                    <div class="startDayCaleander--unselected">1</div>
+                    <div class="startDayCaleander--selected">2</div>
+                    <div class="startDayCaleander--selected">3</div>
+                    <div class="startDayCaleander__SAT--unselected">4</div>
+                </div>
+                <div class="startDayCaleander__week">
+                    <div class="startDayCaleander__SUN--unselected">29</div>
+                    <div class="startDayCaleander--unselected">30</div>
+                    <div class="startDayCaleander--selected">31</div>
+                    <div class="startDayCaleander--unselected">1</div>
+                    <div class="startDayCaleander--selected">2</div>
+                    <div class="startDayCaleander--selected">3</div>
+                    <div class="startDayCaleander__SAT--unselected">4</div>
+                </div>
+            </div>
+        </div>
+        <div class="itemOrder__info__userInfo subTitle">주문자 정보</div>
+        <div class="itemOrder__info__userInfoTab userInfoTab">
+            <div class="itemOrder__info__userInfo__title title">
+                <div>구매자 정보</div>
+                <div>연락처</div>
+            </div>
+            <div class="itemOrder__info__userInfo__content content">
+                <div>김러브</div>
+                <div>010 - 1234 - 4567</div>
+            </div>
+        </div>
+        <div class="itemOrder__info__subTitle subTitle">배송지 정보</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+}
+.top_banner_wrap{
+    width:1280px;
+    margin:119px auto 55px auto;
+    /* display:flex; */
+    align-items: center;
+    position: relative;
+}
+.top_banner{
+    width:1280px;
+    height:350px;
+    margin:0 auto;
+    z-index: 0;
+    position: relative;
+}
+.top_banner>img{
+    width:1280px;
+    height:350px;
+}
+.top_banner_wrap>.arrow-1{
+    width:36px;
+    height:36px;
+    top:50%;
+    transform: translate(0,-50%);
+    z-index: 1;
+    position: absolute;
+}
+.top_banner_wrap>.arrow-2{
+    width:36px;
+    height:36px;
+    right:0%;
+    transform: translate(0,-50%);
+    top:50%;
+    z-index: 1;
+    position: absolute;
+}
+.hot_items{
+    width:1280px;
+    height:657px;
+    margin:0 auto;
+}
+.hot_items_title{
+    font-family:"Pretendard Variable";
+    font-weight:400;
+    font-size:31px;
+}
+.hot_items_table{
+    border-top:1px solid #707070;
+    margin-top:14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hot_items_table>div{
+    margin-top:26px;
+    width:400px;
+}
+.hot_items_table>div>div:first-child{
+    width:400px;
+    height:400px;
+    background-color:gray;
+}
+.hot_items_table>div>div:nth-child(2){
+    margin-top:26px;
+    font-family:"Pretendard Variable";
+    font-weight:100;
+    color:#262626;
+}
+.hot_items_table>div>div:nth-child(3){
+    margin-top:6px;
+    font-family:"Pretendard Variable";
+    font-size:17px;
+    font-weight:500;
+    color:#262626;
+}
+.hot_items_table>div>div:nth-child(4){
+    margin-top:11px;
+    font-family:"Pretendard Variable";
+    font-size:22px;
+    font-weight:500;
+}
+.hot_items_table>div>div:nth-child(4)>span:nth-child(1){
+    margin-right:9px;
+    color:#FF5B5C;
+}
+.hot_items_table>div>div:nth-child(4)>span:nth-child(3){
+    font-size:18px;
+}
+.hot_items_table>div>div:nth-child(4)>span:nth-child(4){
+    margin-left:20px;
+    font-weight:100px;
+    font-size:15px;
+    color:#A8B1BB;
+    text-decoration:line-through;
+}
+.all_items{
+    width:1280px;
+    height:1081px;
+    margin:0 auto;
+}
+.all_items_title{
+    font-family:"Pretendard Variable";
+    font-weight:400;
+    font-size:31px;
+    height:51.5px;
+    border-bottom:1px solid #707070;
+    box-sizing: border-box;
+}
+.itms_filter{
+    margin-top:31px;
+    height:77px;
+    width:1280px;
+    border:1px solid #00502F;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.itms_filter>div:first-child{
+    width:37px;
+    font-size:18px;
+    font-family:"Pretendard Variable";
+    font-weight:300;
+    margin-left:25px;
+}
+.itms_filter>div:nth-child(2){
+    margin-left:7px;
+    margin-right:358px;
+}
+.itms_filter>div:nth-child(n+3){
+    width:104px;
+    height:42px;
+    font-size:15px;
+    line-height:42px;
+    font-family:"Pretendard Variable";
+    font-weight:600;
+    border:1px solid #005330;
+    color:#005330;
+    border-radius:21px;
+    box-sizing: border-box;
+    text-align:center;
+    margin-left: 19px;
+}
+.itms_filter>div:nth-child(n+3):hover{
+    color:white;
+    background-color: #005330;
+    cursor:pointer;
+}
+.itms_filter>div:nth-child(6){
+    width:154px;
+}
+.itms_filter>div:last-child{
+    margin-right: 71px;
+}
+.all_items_table{
+    width:1280px;
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom:300px;
+}
+.all_items_table>div{
+    margin-top:26px;
+    margin-right:40px;
+}
+.all_items_table>div:nth-child(4n){
+    margin-right:0;
+}
+.all_items_table>div>div:first-child{
+    width:290px;
+    height:290px;
+    background-color:gray;
+}
+.all_items_table>div>div:nth-child(2){
+    margin-top:18px;
+    font-family:"Pretendard Variable";
+    font-weight:100;
+    font-size:15px;
+    color:#262626;
+}
+.all_items_table>div>div:nth-child(3){
+    margin-top:3px;
+    font-family:"Pretendard Variable";
+    font-size:16px;
+    font-weight:500;
+    color:#262626;
+}
+.all_items_table>div>div:nth-child(4){
+    margin-top:7px;
+    font-family:"Pretendard Variable";
+    font-size:19px;
+    font-weight:500;
+}
+.all_items_table>div>div:nth-child(4)>span:nth-child(1){
+    margin-right:19px;
+    color:#FF5B5C;
+}
+.all_items_table>div>div:nth-child(4)>span:nth-child(2){
+    font-size:20px;
+}
+.all_items_table>div>div:nth-child(4)>span:nth-child(3){
+    font-size:17px;
+}
+.all_items_table>div>div:nth-child(4)>span:nth-child(4){
+    margin-left:11px;
+    font-weight:100px;
+    font-size:14px;
+    color:#A8B1BB;
+    text-decoration:line-through;
+}

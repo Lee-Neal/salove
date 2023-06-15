@@ -1,0 +1,395 @@
+<!-- 
+1. 리얼 후기 별점 출력 : class real_review_rating 의 인라인 태그 or css에 width에 %값 넣어서 출력.
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/item_selectOne.css">
+    <link rel="stylesheet" href="css/top_menu.css">
+</head>
+<body>
+    <header>
+        <div id="main_warp">
+            <div class="nav">
+                <ul class="menu">
+                    <li>
+                        <a href="main.html"><img src="image/그룹 306.svg"></a>
+                    </li>
+                    <li>
+                        <a href="intro.html">샐러브소개</a>
+                    </li>
+                    <li>
+                        <a href="dietary.html">이달식단표</a>
+                    </li>
+                    <li>
+                        <a href="salad_info.html">샐러드정보</a>
+                    </li>
+                    <li>
+                        <a href="sotre_info.html">매장안내</a>
+                    </li>
+                    <li>
+                        <a href="franchise.html">프렌차이즈</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">주문하기</a>
+                    </li>
+                    <li><a href="###">회원가입</a></li>
+                    <li><a href="###">로그인</a></li>
+                    <li><a href="###">마이페이지</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="product-order block">
+        <div class="product-order-wrap">
+            <div class="product-order__photo">
+
+            </div>
+            <div class="product-order__info">
+                <div class="product-order__info__engName engName">Salad+Chicken breast+Juice [20 days]</div>
+                <div class="product-order__info__korName korName">베이직 샐러드+수비드 닭가슴살+음료 [20일]</div>
+                <div class="product-order__info__priceWrap">
+                    <span class="product-order__info__discount discount">5%</span>
+                    <span class="product-order__info__salePrice salePrice">240,000</span><!-- 
+                 --><span class="product-order__info__won won">원</span>
+                    <span class="product-order__info__ownPrice ownPrice">75,000원</span>
+                </div>
+                <div class="product-order__info__mileageShipping mileageShipping">
+                    <div class="product-order__info__mileage__text mileage__text">적립금</div>
+                    <div class="product-order__info__mileage__percent mileage__percent">1%</div>
+                    <div class="product-order__info__shipping__text1 shipping__text1">배송방법</div>
+                    <div class="product-order__info__shipping__text2 shipping__text2">샐러브 새벽 직배송</div>
+                    <div class="product-order__info__shipping__text3 shipping__text3">수령일 지정은 결제 단계에서 선택 가능합니다.</div>
+                </div>
+                <div class="product-order__info__orderNum orderNum">
+                    <select name="quantity" required>
+                        <option>수량을 선택해주세요. 동일장소에 여러개 배송시 할인됩니다.</option>
+                        <option value="1">1개</option>
+                        <option value="2">2개</option>
+                        <option value="3">3개</option>
+                        <option value="4">4개</option>
+                        <option value="5">5개</option>
+                        <option value="6">6개</option>
+                        <option value="7">7개</option>
+                        <option value="8">8개</option>
+                    </select>
+                </div>
+                <div class="product-order__info__selectInfo selectInfo">
+                    <span class="product-order__info__selectName selectName">베이직 샐러드+수비드 닭가슴살+음료 [20일]</span>
+                    <span class="product-order__info__selectNum selectNum">2개</span>
+                    <span class="product-order__info__selectCancel selectCancel">X</span>
+                </div>
+                <div class="product-order__info__payAmount payAmount">
+                    <span class="product-order__info__payAmount__text payAmount__text">총 합계금액</span>
+                    <span class="product-order__info__payAmount__sum payAmount__sum">420,000</span><!-- 
+                    --><span class="product-order__info__payAmount__won payAmount__won">원</span>
+                    <span class="product-order__info__payAmount__own payAmount__own">75,000원</span>
+                </div>
+                <div class="product-order__info__btn--order btn--order">
+                    <div class="product-order__info__btn--orderText btn--orderText">
+                        날짜선택 및 구매하기
+                    </div>
+                    <div class="product-order__info__btn--orderImg btn--orderImg">
+                        <img src="image/enterMark.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="realReview">
+        <div class="realReview__rwap">
+            <div class="realReview__tab">
+                <div class="realReview__title">리얼후기</div>
+                <div class="realReview__leftTab">
+                    <span class="realReview__leftTab__reviewCount reviewCount">1,558</span><!-- 
+                     --><span class="realReview__leftTab__reviewText reviewText">reviews</span>
+                </div>
+                <!-- 별점 width: 퍼센트로 출력 -->
+                <div class="realReview__leftTab__starTab starTab">
+                    <span class="realReview__leftTab__starBg starBg">
+                        <sapn style="width:36.6%" class="realReview__leftTab__starRating starRating"></sapn>
+                    </span><!-- 
+                 --><span class="realReview__leftTab__starRatingNum starRatingNum">5/5</span>
+                </div>
+            </div>
+            <div class="realReview__list__tab">
+                <div class="realReview__list__title">
+                    <span>12개의 사진</span>
+                </div>
+                <div class="realReview__list__selectAll">
+                    <!-- 리뷰 반복 -->
+                    <div class="realReview__list__itemWrap itemWrap">
+                        <div class="realReview__list__itemPhoto itemPhoto"></div>
+                        <div class="realReview__list__itemText itemText">월 다이어트 성공을 위해 시킵니다가나다라</div>
+                    </div>
+                    <!-- 리뷰 반복 -->
+                    <div class="realReview__list__itemWrap itemWrap">
+                        <div class="realReview__list__itemPhoto itemPhoto"></div>
+                        <div class="realReview__list__itemText itemText">월 다이어트 성공을 위해 시킵니다가나다라</div>
+                    </div>
+                    <div class="realReview__list__itemWrap itemWrap">
+                        <div class="realReview__list__itemPhoto itemPhoto"></div>
+                        <div class="realReview__list__itemText itemText">월 다이어트 성공을 위해 시킵니다가나다라</div>
+                    </div>
+                    <div class="realReview__list__itemWrap itemWrap">
+                        <div class="realReview__list__itemPhoto itemPhoto"></div>
+                        <div class="realReview__list__itemText itemText">월 다이어트 성공을 위해 시킵니다가나다라</div>
+                    </div>
+                    <div class="realReview__list__itemWrap itemWrap">
+                        <div class="realReview__list__itemPhoto itemPhoto"></div>
+                        <div class="realReview__list__itemText itemText">월 다이어트 성공을 위해 시킵니다가나다라</div>
+                    </div>
+                    <div class="realReview__list__itemWrap itemWrap">
+                        <div class="realReview__list__itemPhoto itemPhoto"></div>
+                        <div class="realReview__list__itemText itemText">월 다이어트 성공을 위해 시킵니다가나다라</div>
+                    </div>
+                    <div class="realReview__list__itemWrap itemWrap">
+                        <div class="realReview__list__itemPhoto itemPhoto"></div>
+                        <div class="realReview__list__itemText itemText">월 다이어트 성공을 위해 시킵니다가나다라</div>
+                    </div>
+                    <div class="realReview__list__itemWrap itemWrap">
+                        <div class="realReview__list__itemPhoto itemPhoto"></div>
+                        <div class="realReview__list__itemText itemText">월 다이어트 성공을 위해 시킵니다가나다라</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-order__nav block">
+        <div class="product-order__nav--selcted">상품정보</div>
+        <div>상품리뷰(105)</div>
+        <div>상품문의(51)</div>
+        <div>상품안내</div>
+    </div>
+    <div class="itemInfo--include">
+        상품 설명 불러올거임.
+    </div>
+    <div class="product-order__nav block">
+        <div>상품정보</div>
+        <div class="product-order__nav--selcted">상품리뷰(105)</div>
+        <div>상품문의(51)</div>
+        <div>상품안내</div>
+    </div>
+    <div class="itemReview block">
+        <div class="itemReview__wrap">
+            <div class="itemReview__tap">
+                <div class="itemReview__tap__text">상품리뷰</div>
+                <div class="itemReview__tap__star">
+                    <span class="itemReview__tap__starPoints">4.7</span>
+                </div>
+                <div class="itemReview__tap__reviews">
+                    <span class="itemReview__tap__reviewsNum">1,558</span><!--  
+                    --><span class="itemReview__tap__reviewsText">reviews</span>
+                </div>
+            </div>
+            <div class="itemReview__statistics">
+                <div class="itemReview__statistics__bg">
+                    <div class="itemReview__statistics__bg__5satars bg__5satars"></div>
+                    <div class="itemReview__statistics__bg__4satars bg__4satars"></div>
+                    <div class="itemReview__statistics__bg__3satars bg__3satars"></div>
+                    <div class="itemReview__statistics__bg__2satars bg__2satars"></div>
+                    <div class="itemReview__statistics__bg__1satars bg__1satars"></div>
+                </div>
+                <!-- value값 조절 -->
+                <div class="itemReview__statistics__fill">
+                    <progress id="5star_progress" value="20" max="100"></progress>
+                    <progress id="4star_progress" value="20" max="100"></progress>
+                    <progress id="3star_progress" value="20" max="100"></progress>
+                    <progress id="2star_progress" value="20" max="100"></progress>
+                    <progress id="1star_progress" value="20" max="100"></progress>
+                </div>
+                <div class="itemReview__statistics__cntBubble">
+                    <div id="cntBubble--5star"><img src="image/review_count.png"><span>1,350</span></div>
+                    <div id="cntBubble--4star"><img src="image/review_count.png"><span>1,350</span></div>
+                    <div id="cntBubble--3star"><img src="image/review_count.png"><span>1,350</span></div>
+                    <div id="cntBubble--2star"><img src="image/review_count.png"><span>1,350</span></div>
+                    <div id="cntBubble--1star"><img src="image/review_count.png"><span>1,350</span></div>
+                </div>
+            </div>
+            <div class="itemReview__photo">
+                <div class="itemReview__photo--leftArrow leftArrow"><img src="image/left_arrow_scroll.svg"></div>
+                <div class="itemReview__photo__wrap">
+                    <div class="itemReview__photo__text">베스트 포토 리뷰</div>
+                    <div class="itemReview__photo__list">
+                        <!-- 반복 -->
+                        <div class="itemReview__photo__bestReview bestReview">
+                            <div class="itemReview__photo__bestPhoto bestPhoto"></div>
+                            <div class="itemReview__photo__bestText bestText">월 다이어트 성공을 위해 시킵니다가나다라</div>
+                        </div>
+                        <div class="itemReview__photo__bestReview bestReview">
+                            <div class="itemReview__photo__bestPhoto bestPhoto"></div>
+                            <div class="itemReview__photo__bestText bestText">월 다이어트 성공을 위해 시킵니다가나다라</div>
+                        </div>
+                        <div class="itemReview__photo__bestReview bestReview">
+                            <div class="itemReview__photo__bestPhoto bestPhoto"></div>
+                            <div class="itemReview__photo__bestText bestText">월 다이어트 성공을 위해 시킵니다가나다라</div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+                <div class="itemReview__photo--rightArrow rightArrow"><img src="image/right_arrow_scroll.svg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="itemReview__navWrap block">
+        <div class="itemReview__nav">
+            <!-- 클릭시 .review_active 클래스 부여 -->
+            <div class="itemReview__nav--slected">전체리뷰</div>
+            <div>포토리뷰</div>
+            <div>동영상리뷰</div>
+        </div>
+    </div>
+    <div class="itemReview__orderbyWarp block">
+        <div class="itemReview__orderby">
+            <!-- active 시 .item_review_cate_active 부여 -->
+            <div class="itemReview__orderby--selected">최신순</div>
+            <div>평점순</div>
+            <div>도움순</div>
+        </div>
+        <div class="itemReview__listWrap">
+            <!-- 이하  itemReview__list__item 반복 출력.-->
+            <div class="itemReview__list__item">
+                <div class="itemReview__list__item__photo"></div>
+                <div class="itemReview__list__item__rightTab">
+                    <div class="itemReview__list__starTab starTab">
+                        <span class="itemReview__list__starBg starBg">
+                            <sapn style="width:36.6%" class="itemReview__list__starRating starRating"></sapn>
+                        </span>
+                    </div>
+                    <div class="itemReview__list__title list__title">첫 구매 후기남깁니다!</div>
+                    <!-- 2줄 이상 출력 시 ... JS로 처리 필요 -->
+                    <div class="itemReview__list__content list__content">신선하고 가성비 괜찮은거 같아요 아침에 한 끼 아메리카노랑 먹는데
+                        같이 먹는 친구도 괜찮다고 주문한다더라구요~ 메뉴도 물리지 않게 항상 바뀌어서 오구요!  재구매 의사 무조건 있어요</div>
+                    <div class="itemReview__list__attachedFiles__tab attachedFiles__tab">
+                        <div class="itemReview__list__attachedFiles__item attachedFiles__item"></div>
+                        <div class="itemReview__list__attachedFiles__item attachedFiles__item"></div>
+                        <div class="itemReview__list__attachedFiles__item attachedFiles__item"></div>
+
+                    </div>
+                </div>
+                <div class="itemReview__list__rightTab">
+                    <div class="itemReview__list__id">slife******</div>
+                    <div class="itemReview__list__date">2023-02-07</div>
+                </div>
+            </div>
+            <div class="pagination block">
+                <ul>
+                    <li class="pagination--active"><a href="###">1</a></li>
+                    <li><a href="###">2</a></li>
+                    <li><a href="###">3</a></li>
+                    <li><a href="###">4</a></li>
+                    <li><a href="###">5</a></li>
+                    <li><a href="###">6</a></li>
+                    <li><a href="###">7</a></li>
+                    <li><a href="###">8</a></li>
+                    <li><a href="###">9</a></li>
+                    <li><a href="###">10</a></li>
+                    <li><a href="###">></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="product-order__nav block">
+        <div>상품정보</div>
+        <div>상품리뷰(105)</div>
+        <div class="product-order__nav--selcted">상품문의(51)</div>
+        <div>상품안내</div>
+    </div>
+    <div class="product-inquiry block">
+        <div class="product-inquiry__top">
+            <div class="product-inquiry__text">상품문의</div>
+            <div class="product-inquiry__rightTab">
+                <div class="product-inquiry__selectAllBtn">상품문의 전체보기</div>
+                <div class="product-inquiry__createTicketBtn">상품문의작성</div>
+            </div>
+        </div>
+        <div class="product-inquiry__list">
+            <!-- 반복 출력 -->
+            <div class="product-inquiry__item">
+                <div class="product-inquiry__item__num">100</div>
+                <div class="product-inquiry__item__title">문의드립니다아아아아</div>
+                <div class="product-inquiry__item__id">ajkdcvgbi2iu97dhj</div>
+                <div class="product-inquiry__item__date">2022.10.25</div>
+                <div class="product-inquiry__item__ticketStatus">답변완료</div>
+            </div>
+
+        </div>
+        <div class="pagination block">
+            <ul>
+                <li class="pagination--active"><a href="###">1</a></li>
+                <li><a href="###">2</a></li>
+                <li><a href="###">3</a></li>
+                <li><a href="###">4</a></li>
+                <li><a href="###">5</a></li>
+                <li><a href="###">6</a></li>
+                <li><a href="###">7</a></li>
+                <li><a href="###">8</a></li>
+                <li><a href="###">9</a></li>
+                <li><a href="###">10</a></li>
+                <li><a href="###">></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="product-order__nav block">
+        <div>상품정보</div>
+        <div>상품리뷰(105)</div>
+        <div>상품문의(51)</div>
+        <div class="product-order__nav--selcted">상품안내</div>
+    </div>
+    <div class="product-info block">
+        <div class="product-info__orderNPay">
+            <div class="product-info__orderNPay__headTitle headTitle">주문접수 및 결제안내</div>
+            <div class="product-info__orderNPay__subTitle subTitle">주문접수</div>
+            <div class="product-info__orderNPay__infoText infoText">
+                주문접수는 홈페이지를 통해 24시간 가능하며, 전화 주문접수의 경우는 고객센터(1600-3413)를 통해 가능하십니다.<br>
+                (전화 주문의 경우 무통장 입금만 가능하십니다.)
+            </div>
+            <div class="product-info__orderNPay__subTitle subTitle">결제안내</div>
+            <div class="product-info__orderNPay__infoText infoText">
+                홈페이지 결제 : 무통장 , 계좌이체, 카드<br>
+                전화 결제 : 무통장
+            </div>
+        </div>
+        <div class="product-info__shipping">
+            <div class="product-info__shipping__headTitle headTitle">배송일정 및 배송안내</div>
+            <div class="product-info__shipping__infoText infoText">
+                배송 시 고객님의 연락 부재 또는 주소 오기입으로 제품 수령이안될 경우 정책상 반송되게 되므로 이로 인한 환불은 소비자 보호에 관한 법률(전자상거래법) 17조 3항에 의해 불가합니다. <br>
+                ※소비자보호에 관한 법률(전자상거래 법) 17조 3항 : 시간이 지나 다시 판매하기 곤란할 정도로 재화의 가치가 현저하게 감소한 경우 소비자는 청약절회를 요청할 수 없다.<br>
+                신선 식품 특성상 제주/도서/산간지역은 배송이 원할치 못한 점 양해 부탁드립니다.<br>
+                택배사 사정으로 당일 물량 증가로 인해 오후 6시 이후 제품 수령할 수 있다는 부분 참고 부탁드립니다.<br>
+                겨울(5℃ 이하 날씨)에 아이스팩을 넣을 경우, 아이스팩과 맞닿은 면이 얼기 때문에 대략 12월 ~ 3월 사이에는 배송 시 아이스팩이 들어가지 않습니다.<br>
+                (12월 ~ 3월 사이 배송 시, 아이스팩 대신 얼린 생수가 들어갑니다.)<br>
+                새벽 배송 고객의 경우 원칙은 보냉 가방으로 배송되오나, 수거 상황에 따라 은박 보냉백으로 배송 될 수 있습니다. ※종료 예정자는 은박 보냉백으로 배송됩니다.
+
+            </div>
+        </div>
+        <div class="product-info__change">
+            <div class="product-info__change__headTitle headTitle">교환 및 반품안내</div>
+            <div class="product-info__change__infoText infoText">
+                교환/반품은 제품 하자시 실제 수령일부터 전자 상거래법에 의해 7일이내에 가능합니다<br>
+                (조명에 의한 빛이나 모니터의 색상차이는 제품의 하자가 아닙니다.)<br>
+                주소 불명,연락처 불명,오입력으로 반송된 경우, 왕복택배비용을 고객님께서 지불하셔야 합니다.<br>
+                반품배송비가 구매자 부담인경우 반품배송비 추가결제가 이루어지지 않으면 환불이 지연 될 수있습니다.<br>
+                교환/반품시 지정택배를 이용하지 않을 경우 추가 금액이 발생 할 수 있으니 이에 대한 금액은 고객님께서 부담하셔야 합니다.<br>
+                교환/반품시 최초 포장상태를 유지해주셔야 하며 반품 배송중 파손될 경우, 회수 상품의 상태에 따라 추가도색비나 리패킹비가 발생 할수 있습니다.<br>
+                고객센터로 연락을 주지 않으신 상태에서 임의로 제품을 발송하실 경우, 교환/반품 접수가 되지않고 다시 반송되는 경우가 있으니 꼭! 고객센터로 연락을 먼저 주시기 바랍니다.
+            </div>
+            <div class="product-info__change__textFocus textFocus">
+                <span>
+                    단순 변심 또는 개인 사정에 의해 환불을 원하시는 경우 이용분 식단 추가 수령 후 남은 일수에 대하여 환불해드리고 있습니다. 쿠폰 또는 기간 할인은 적용되지 않으며 이용 기간에 따른 쿠폰 적용 불가합니다.
+                </span>
+                <span>
+                    이벤트 상품은 중도 환불 시, 이용기간 + 이벤트 1주분 금액을 제외한 금액이 환불되므로, 꼭 유의하시고 진행바랍니다.
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

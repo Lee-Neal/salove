@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'pretendard';
+    letter-spacing:-0.25;
+    font-size:20px;
+    font-weight: 400;
+    color:#323232;
+}
+.itemOrder__info{
+    width:1280px;
+    margin:0 auto;
+
+}
+.topText{
+    margin-top:117px;
+    margin-bottom:23px;
+    font-weight: 500;
+    font-size:30px;
+}
+.subTitle{
+    width:1280px;
+    font-weight: 500;
+    height: 54px;
+    border-top:1px solid #C7C7C7;
+    border-bottom:1px solid #C7C7C7;
+    line-height: 54px;
+    padding-left:15px;
+    font-size:25px;
+    box-sizing: border-box;
+}
+.detailWrap{
+    height:301px;
+    display: flex;
+}
+.detailImage{
+    width:180px;
+    height:180px;
+    background-color: #eeeeee;
+    margin:33px 40px 88px 0px;
+}
+.detailCenter{
+    margin:85px 0px 88px 0px;
+}
+.engName{
+    font-size:22px;
+    font-weight: 100;
+}
+.korName{
+    font-size:23px;
+    font-weight: 500;
+    margin-top:3px;
+}
+.shipDurationWrap{
+    width:660px;
+    height:33px;
+    line-height: 33px;
+    margin-top:39px;
+    display: flex;
+    background-color:#F2EFEF;
+    border:1px solid #D4D2D2;
+    box-sizing: border-box;
+    font-size:18px;
+    color:#707070;
+}
+.shipDurationText{
+    width:200px;
+    text-align: center;
+}
+.shipMiddleBorder{
+    width:1px;
+    height:15px;
+    margin-top:9px;
+    background-color: #707070;
+}
+.shipDurationIndex{
+    padding-left:12px;
+}
+.detailRight{
+    width:290px;
+    height:67px;
+    margin:80px 0px 154px 0px;
+}
+.ownPrice{
+    width:290px;
+    font-size:22px;
+    font-weight: 100;
+    color:#A8B1BB;
+    text-decoration-line: line-through;
+    text-align: right;
+}
+.priceTab{
+    height:41px;
+    display: flex;
+    justify-content: space-between;
+}
+.mount{
+    width:70px;
+    color:#323232;
+    font-size:23px;
+    font-weight: 500;
+    text-align: right;
+}
+.payAmount{
+    font-size:35px;
+    font-weight: 500;
+    color:#A81F1F;
+    text-align: right;
+}
+.payAmountWon{
+    font-size:29px;
+    font-weight: 500;
+    color:#A81F1F;
+    text-align: right;
+}
+.shipDayWrap{
+    width:1280px;
+    height: 181.6px;
+}
+.subText{
+    margin-top:18px;
+}
+.daySelectBox{
+    width:1200px;
+    height:50px;
+    line-height:50px;
+    margin:29px auto 0px auto;
+    text-align:center;
+    display:flex;
+    justify-content: space-between;
+}
+.daySelectBox>div{
+    width:230px;
+    border: 1px solid #BFBFBF;
+    box-sizing: border-box;
+    color:#BFBFBF;
+    border-radius: 25px;
+}
+.daySelectBox--selected{
+    background-color: #00502F;
+    font-weight: 600;
+    color:white !important;
+}
+.startDayCaleander{
+    width:840px;
+    margin:68px auto 100px auto;
+    text-align: center;
+    font-size:16px;
+}
+.startDayCaleander__YYMM{
+    width:170px;
+    height:26px;
+    font-size:22px;
+    line-height: 26px;
+    display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.startDayCaleander__head{
+    margin-top: 26.8px;
+    width:840px;
+    height:33px;
+    line-height: 33px;
+    box-sizing: border-box;
+    border-top: 1px solid #3E3E3E;
+    border-bottom: 1px solid #3E3E3E;
+    display:flex;
+    justify-content: space-around;
+}
+.startDayCaleander__head>div{
+    width:120px;
+}
+.startDayCaleander__SUN{
+    color:#DF0000;
+}
+.startDayCaleander__SAT{
+    color:#32B9C9; 
+}
+.startDayCaleander__week{
+    font-size:17px;
+    height:50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    color:#414141;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.startDayCaleander__week>div{
+    width:120px;
+}
+.startDayCaleander--unselected{
+    font-size:15px  !important; 
+    color:rgb(65,65,65,27%) !important;
+}
+.startDayCaleander__SUN--unselected{
+    font-size:15px  !important; 
+    color:rgb(233,0,0,27%) !important;
+}
+.startDayCaleander__SAT--unselected{
+    font-size:15px  !important; 
+    color:rgb(50,185,201,27%) !important;
+}
+.startDayCaleander--selected{
+    line-height:36px;
+    width:36px !important;
+    height:36px;
+    margin:0px 42px 0px 42px;
+    border-radius: 50%;
+    font-size:17px;
+    background-color: #00502F;
+    color:white !important;
+}
+.userInfoTab{
+    width:1280px;
+    height: 124px;
+    margin:0 auto;
+    border-bottom: 1px solid #C7C7C7;
+    margin-bottom: 100px;
+    display:flex;
+}
+.title{
+    width:180px;
+    font-weight: 700;
+    font-size:18px;
+}
+.title>div{
+    margin-left:24px;
+    height:62px;
+    line-height: 62px;
+}
+.content{
+    width:1060px;;
+    font-weight: 300;
+    font-size:18px;
+}
+.content>div{
+    margin-left:40px;
+    height:62px;
+    line-height: 62px;
+}
